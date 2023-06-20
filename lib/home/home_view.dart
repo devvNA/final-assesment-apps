@@ -61,7 +61,7 @@ class HomeView extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    buttonCountWidget(
+                    _buttonCountWidget(
                       title: '1',
                       onTap: () {
                         final inputan = inputNumber.text;
@@ -71,7 +71,7 @@ class HomeView extends StatelessWidget {
                     const SizedBox(
                       width: 10.0,
                     ),
-                    buttonCountWidget(
+                    _buttonCountWidget(
                       title: '2',
                       onTap: () {
                         final inputan = inputNumber.text;
@@ -86,7 +86,7 @@ class HomeView extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    buttonCountWidget(
+                    _buttonCountWidget(
                       title: '3',
                       onTap: () {
                         final inputan = inputNumber.text;
@@ -96,7 +96,7 @@ class HomeView extends StatelessWidget {
                     const SizedBox(
                       width: 10.0,
                     ),
-                    buttonCountWidget(
+                    _buttonCountWidget(
                       title: '4',
                       onTap: () {
                         final inputan = inputNumber.text;
@@ -124,7 +124,7 @@ class HomeView extends StatelessWidget {
     );
   }
 
-  Widget buttonCountWidget(
+  Widget _buttonCountWidget(
       {required final String title, final VoidCallback? onTap}) {
     return Expanded(
       child: ElevatedButton(
